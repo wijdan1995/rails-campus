@@ -1,11 +1,11 @@
-<h1>Heyyyyyy</h1>
+<h1><%= @author.first_name %>'s Books</h1>
 
-<h3><%= link_to "Create a book", new_book_path %></h3>
+<h3><%= link_to "Create a book", new_author_book_path(@author) %></h3>
 
 <% @books.each do |book| %>
 
 <h3>
-  <%= link_to book.title, book_path(book) %>
+  <%= link_to book.title, author_book_path(@author, book) %>
 </h3>
 
 <% end %>

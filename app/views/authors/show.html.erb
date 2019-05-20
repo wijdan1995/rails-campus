@@ -9,6 +9,7 @@
 <%= @author.location %>
 <%= @author.hometown %>
 
+<%= link_to "Show Books", author_books_path( @author) %>
 <%= link_to "Edit", edit_author_path(@author) %>
 <%= link_to "Delete this author", author_path(@author), method: :delete %>
 </p>
