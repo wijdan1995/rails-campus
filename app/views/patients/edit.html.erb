@@ -1,0 +1,9 @@
+<h1>Update patient information</h1>
+
+<%= form_for @patient, url:{action: "update"} do |p| %>
+    <%= p.text_field :first_name %>
+    <%= p.text_field :last_name %>
+    <%= p.text_field :diagnosis %>
+    <%= p.date_field :born_on %>
+    <%= p.submit "Save" %>
+<%end%>
