@@ -1,8 +1,13 @@
 <h1>Update author information</h1>
 
 <%= form_for @author, url:{action: "update"} do |a| %>
+    <%= a.label :first_name %>
     <%= a.text_field :first_name %>
+    <%= a.label :last_name %>
     <%= a.text_field :last_name %>
+    <%= a.label :nickname %>
+    <%= a.text_field :nickname %>
+    <%= a.label :location %>
     <%= a.text_field :location %>
     <%= a.submit "Save" %>
 <%end%>
